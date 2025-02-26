@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kartik Sharma - Web Developer Portfolio">
+    <meta name="author" content="Kartik Sharma">
+    <title>Kartik Sharma - Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Add a favicon for the website -->
+</head>
+<body>
+    <nav> 
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>𝙺𝘼𝙍𝙏𝙄𝙆 𝙎𝙃𝘼𝙍𝙈𝘼</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()" aria-label="Open Menu"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Skills</a>
+                <a href="#">Services</a>
+                <a href="#">Blogs</a>
+                <a href="https://www.instagram.com/0wn._kartik?igsh=NHl1amQ3b3IzMW5p" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()" aria-label="Close Menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h1 data-aos="fade-up" data-aos-duration="1000">Hello, I'm Kartik Sharma</h1>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                       HELLO I AM KARTIK SHARMA I AM A WEB DEVLOPER I LEARN IKT NEWLY AND I MAKE SOME PROJECTS THIS IS MY WEBSITE TO CONNECT TO ME AND SEE MY WORK SO PLS COME TO MY DM ON INSTA AND TELL ME HOW ABOUT YOUR DESISION OF WEB i want to share my idea and projects with you so pls come to my dm and tell me how about your desision of web devlopment i wanr to share my idea and projects with you so pls come to my dm and tell me how about your desision of web devlopment
+                    </p>
+
+                    <div class="btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <a href="https://www.instagram.com/0wn._kartik?igsh=NHl1amQ3b3IzMW5p"><button>Contact Me</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+
+        // Hamburg Menu Toggle
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+            document.querySelector('.hamburg').setAttribute('aria-expanded', 'true');
+        }
+
+        // Close Dropdown Menu
+        function cancel(){
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+            document.querySelector('.hamburg').setAttribute('aria-expanded', 'false');
+        }
+    </script>
+    
+    
+</body>
+</html>
